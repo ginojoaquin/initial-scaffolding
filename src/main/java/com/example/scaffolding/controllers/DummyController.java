@@ -26,17 +26,17 @@ public class DummyController {
         return null;
     }
     @PostMapping("")
-    public ResponseEntity<DummyDto> createDummy(DummyDto dummyDto) {
+    public ResponseEntity<DummyDto> createDummy(@RequestBody DummyDto dummyDto) {
         Dummy dummy = dummyService.createDummy(null);
         return null;
     }
     @PutMapping("")
-    public ResponseEntity<DummyDto> updateDummy(DummyDto dummyDto ) {
+    public ResponseEntity<DummyDto> updateDummy(@RequestBody DummyDto dummyDto ) {
         Dummy dummy = dummyService.updateDummy(null);
         return null;
     }
     @DeleteMapping("")
-    public ResponseEntity<DummyDto> deleteDummy(DummyDto dummyDto) {
+    public ResponseEntity<DummyDto> deleteDummy(@RequestBody DummyDto dummyDto) {
         dummyService.deleteDummy(null);
         return null;
     }
